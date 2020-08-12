@@ -14,9 +14,9 @@ class Fun(commands.Cog, name="Fun Commands"):
     def __init__(self, bot):
         self.bot = bot
 
-    ###################################
-    ### Skidy, Ashu, Dark's quotes. ###
-    ###################################
+    #####################################################
+    ### Skidy, Ashu, Dark, James, Blob, Hor's quotes. ###
+    #####################################################
 
     @commands.command(description="Sends Skidy's emote.")
     async def skidy(self, ctx):
@@ -50,6 +50,34 @@ class Fun(commands.Cog, name="Fun Commands"):
         response = officialEmbed(title=quote, color=0xff4500, author="DarkStar7471",
                                  author_img="https://i.imgur.com/jZ908d1.png", footer="")
         await ctx.send(embed=response)
+
+   @commands.command(description="Send a random James quote.")
+   async def james(self, ctx):
+       jamesQuotes = config.get_string("quotes")["james"]
+        quote = jamesQuotes[random.randint(0, len(jamesQuotes)-1)]
+
+        response = officialEmbed(title=quote, color=0xff4500, author="James",
+                                 author_img="https://i.imgur.com/jZ908d1.png", footer="")
+        await ctx.send(embed=response)
+
+   @commands.command(description="Send a random Blob quote.")
+   async def bobloblaw(self, ctx):
+       boblobloblawQuotes = config.get_string("quotes")["bobloblaw"]
+        quote = bobloblawQuotes[random.randint(0, len(bobloblawQuotes)-1)]
+
+        response = officialEmbed(title=quote, color=0xff4500, author="Blob",
+                                 author_img="https://i.imgur.com/jZ908d1.png", footer="")
+        await ctx.send(embed=response)
+
+   @commands.command(description="Send a random Horshark quote.")
+   async def horshark(self, ctx):
+       horsharkQuotes = config.get_string("quotes")["horshark"]
+        quote = horsharkQuotes[random.randint(0, len(horsharkQuotes)-1)]
+
+        response = officialEmbed(title=quote, color=0xff4500, author="Horshark",
+                                 author_img="https://i.imgur.com/jZ908d1.png", footer="")
+        await ctx.send(embed=response)
+
 
     ########################
     ### HONK, BOOP, NOOT ###

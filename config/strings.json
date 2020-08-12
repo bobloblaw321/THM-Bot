@@ -299,7 +299,22 @@
             "special_quote",
             "bLuE iS nOt BrOkEn. -DarkStar, probably.",
             "kali lincox, the louder u r the less u hear"
-        ]
+        ],
+        "james":[
+            "Google it",
+            "Don't ask to ask",
+            "Head over to #general",
+            "@skidy dis is borked"
+        ],
+        "bobloblaw":[
+           "It's Blob Loblaw, now",
+           "RE? @smack",
+           "James halp"
+        ],
+	"horshark":[
+	   "I just want Spooks to recognize me as his child",
+	   "I'm a horse-shark hybrid and yes, it's scary"
+	]
     },
     "verify":{
         "help_desc":"Verify yourself to get your roles.",
